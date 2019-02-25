@@ -11,4 +11,4 @@
 1. Learned how to use `datejs` to format dates and compare dates. From that returned a range of logs (with optional limit) to the user
 2. Using `uuid` to define mongoose schema `_id` and providing it to the user to find their profile or add logs to profile
 
-(You can access the project online here)[https://desert-ophthalmologist.glitch.me/]
+[You can access the project online here](https://desert-ophthalmologist.glitch.me/)
