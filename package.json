@@ -1,0 +1,46 @@
+{
+	"name": "fcc-exercise-tracker-project",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "4.16.*",
+		"body-parser": "1.18.3",
+		"cors": "2.8.*",
+    "mongodb":"3.1.13",
+    "mongoose":"5.4.14",
+    "react":"^15.6.1",
+    "react-dom":"^15.6.1",
+    "uuid":"3.3.2",
+    "datejs":"0.0.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babel-register-cli": "^4.0.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "*",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.5.0",
+    "webpack-dev-server": "^2.5.0",
+    "style-loader": "^0.16.1"
+  },
+  "babel":{
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+	"main": "server.js",
+	"scripts": {
+    "build":"webpack",
+		"start": "rimraf ./public/bundle.js && webpack && babel-register server"
+	},
+	"engines": {
+		"node": "8.1.x"
+	}
+}
